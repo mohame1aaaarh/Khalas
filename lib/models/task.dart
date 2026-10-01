@@ -3,7 +3,7 @@ class Task {
   final String userId;
   final String title;
   final String? description;
-  final String priority;   // 'low' | 'medium' | 'high'
+  final String priority;
   final String? category;
   final DateTime? dueDate;
   final bool isCompleted;
@@ -40,8 +40,7 @@ class Task {
     );
   }
 
-  /// للـ insert/update. id و created_at و updated_at بيتولدوا في الداتابيز،
-  /// فمش بنبعتهم هنا.
+
   Map<String, dynamic> toJson() {
     return {
       'user_id': userId,
